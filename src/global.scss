@@ -1,0 +1,204 @@
+@import './config.scss';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: $size;
+}
+
+body {
+	height: 100%;
+	line-height: 1.16;
+	margin: 0;
+	background-color: #e5e5e5;
+	font-family: $roboto;
+	color: $text;
+	overflow-x: hidden;
+}
+
+.content {
+	position: relative;
+}
+
+.btn {
+	display: inline-block;
+	background: transparent;
+	border: none;
+	border-radius: 12px;
+	padding: 5px 13px;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
+	&:disabled {
+		pointer-events: none;
+		opacity: 0.6;
+	}
+	&.btn-accent {
+		background-color: $accent;
+		color: #fff;
+		&:hover {
+			background-color: darken($accent, 10%);
+		}
+	}
+	&.btn-outline {
+		color: $accent;
+		box-shadow: 0 0 0px 1px $accent;
+		&:hover {
+			background-color: rgba($accent, 0.2);
+		}
+	}
+	&:not(:first-child) {
+		margin-left: 10px;
+	}
+}
+
+.btn-group {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	max-width: 1366px;
+	margin: 10px auto;
+	padding: 20px;
+	min-height: calc(100vh - 2rem);
+	box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.24);
+}
+
+.card-header {
+	margin-bottom: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	border-color: $accent2;
+	th {
+		font-weight: normal;
+		padding: 3px 5px;
+	}
+	td {
+		text-align: center;
+		padding: 1px 5px;
+	}
+	.delete {
+		display: inline-block;
+		cursor: pointer;
+		line-height: 1;
+		padding: 0 5px;
+		svg {
+			fill: #376b8d;
+		}
+	}
+	tr:first-child {
+		th,
+		td {
+			border-top-width: 0;
+		}
+	}
+}
+
+form {
+	.row {
+		display: flex;
+		position: relative;
+		align-items: center;
+		margin-bottom: 3px;
+	}
+	.form-control {
+		width: 73%;
+	}
+	label {
+		flex-grow: 1;
+	}
+	.error {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		color: red;
+	}
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 0.2rem 0.3rem;
+	background-color: #fff;
+	border: 0.25px solid #6b7074;
+	&:focus-visible {
+		outline: none;
+	}
+	&:focus {
+		border-color: $accent2;
+		box-shadow: 0 0 0 1px $accent2;
+	}
+}
+
+.dt-wrap {
+	flex-grow: 1;
+	border: 1px solid $accent2;
+	overflow: auto;
+	table {
+		min-width: 1300px;
+	}
+}
+
+td,
+th {
+	border-color: #6b7074;
+	border-style: solid;
+	border-width: 1px;
+	vertical-align: bottom;
+	&:first-child {
+		border-left-width: 0;
+	}
+	&:last-child {
+		border-right-width: 0;
+	}
+}
+
+th {
+	background-color: $accent2;
+	color: #fff;
+}
+
+.ReactModal__Overlay {
+	background-color: #000;
+}
+
+.ReactModal__Content {
+	.modal-title {
+		font-weight: 500;
+		font-size: 32px;
+		margin: 10px 0 30px;
+	}
+	.btn-close {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+	}
+	form {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+.btn-close {
+	background: transparent;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: all 0.3s ease;
+	&:hover {
+		opacity: 1;
+	}
+}
