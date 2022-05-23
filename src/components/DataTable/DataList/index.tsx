@@ -9,24 +9,28 @@ const DataList: FC = () => {
 	return (
 		<div className='dt-wrap'>
 			<table className='table data-table'>
-				<tr>
-					<th></th>
-					<th>Company</th>
-					<th>Name</th>
-					<th>Additional</th>
-					<th>Street</th>
-					<th>Postal Code</th>
-					<th>Country</th>
-					<th>IBAN</th>
-					<th>BIC</th>
-					<th>Bank name</th>
-					<th>Fax</th>
-					<th>E-mail</th>
-					<th>Birthday</th>
-					<th>Homepage</th>
-				</tr>
-				{users &&
-					users.map((user, index) => <DataItem key={user.id} user={user} />)}
+				<thead>
+					<tr>
+						<th></th>
+						<th>Company</th>
+						<th>Name</th>
+						<th>Additional</th>
+						<th>Street</th>
+						<th>Postal Code</th>
+						<th>Country</th>
+						<th>IBAN</th>
+						<th>BIC</th>
+						<th>Bank name</th>
+						<th>Fax</th>
+						<th>E-mail</th>
+						<th>Birthday</th>
+						<th>Homepage</th>
+					</tr>
+				</thead>
+				<tbody>
+					{users &&
+						users.map((user, index) => <DataItem key={user.id} user={user} />)}
+				</tbody>
 			</table>
 		</div>
 	)
