@@ -25,6 +25,7 @@ const CreateUser: FC = () => {
 
 	const onSubmit = handleSubmit(data => {
 		dispatch(addUser(data))
+		setShowModal(false)
 		setFormStep(1)
 		reset()
 	})
