@@ -2,7 +2,7 @@
 	"name": "ship-test",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://066den.github.io/data_table",
+	"homepage": "https://066den.github.io/react-reduxtoolkit-hook-form/",
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.8.1",
 		"@testing-library/jest-dom": "^5.16.4",
