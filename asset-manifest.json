@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/data_table/static/css/main.bed8db5a.css",
-    "main.js": "/data_table/static/js/main.7c4be5b6.js",
-    "index.html": "/data_table/index.html",
-    "main.bed8db5a.css.map": "/data_table/static/css/main.bed8db5a.css.map",
-    "main.7c4be5b6.js.map": "/data_table/static/js/main.7c4be5b6.js.map"
+    "main.css": "/react-reduxtoolkit-hook-form/static/css/main.bed8db5a.css",
+    "main.js": "/react-reduxtoolkit-hook-form/static/js/main.7c4be5b6.js",
+    "index.html": "/react-reduxtoolkit-hook-form/index.html",
+    "main.bed8db5a.css.map": "/react-reduxtoolkit-hook-form/static/css/main.bed8db5a.css.map",
+    "main.7c4be5b6.js.map": "/react-reduxtoolkit-hook-form/static/js/main.7c4be5b6.js.map"
   },
   "entrypoints": [
     "static/css/main.bed8db5a.css",
